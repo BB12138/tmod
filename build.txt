@@ -1,0 +1,3 @@
+displayName = Bulksell
+author = 没有酱
+version = 2.1

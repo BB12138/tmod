@@ -1,0 +1,75 @@
+Configs: {
+	BulkSellConfig: {
+		DisplayName: 批量出售设置
+
+		Headers: {
+			Usage: 使用说明与快捷键
+			Functional: 功能设置
+			Layout: 界面布局 (自动保存)
+		}
+
+		UsageGuide: {
+			Label: 使用说明
+			Tooltip:
+				'''
+				• 左键点击按钮：出售背包内非收藏物品。
+				• 右键点击按钮：开关历史记录面板。
+				• 面板顶部文字：一键取回。
+				• 记录项点击：单独买回该物品。
+				• 提示：Alt或Shift键按住时，点击按钮不会触发。
+				'''
+		}
+
+		MaxHistory: {
+			Label: 历史记录上限
+			Tooltip: 最多保存多少条售卖记录。
+		}
+
+		BlackList: {
+			Label: 强制售卖名单
+			Tooltip: 即使物品没有价值，也会被出售。
+		}
+
+		ButtonLeft: {
+			Label: 按钮横向位置
+			// Tooltip: ""
+		}
+
+		ButtonTop: {
+			Label: 按钮纵向位置
+			// Tooltip: ""
+		}
+
+		ButtonWidth: {
+			Label: 按钮宽度
+			// Tooltip: ""
+		}
+
+		ButtonHeight: {
+			Label: 按钮高度
+			// Tooltip: ""
+		}
+
+		ResetLayout: {
+			Tooltip: 点击重置布局到默认值
+			Label: 点击重置布局到默认值
+		}
+	}
+
+	// ResetLayoutButton.Tooltip: ""
+}
+
+UI: {
+	ButtonHint: 批量出售(左键) / 历史(右键)
+	UndoAll: 点击此处全部取回
+	NoHistory: 暂无记录
+}
+
+Messages: {
+	InventoryFull: 背包已满，停止取回！
+	MoneyInsufficient: 金钱不足以买回任何物品！
+	UndoSuccess: 已成功取回 {0} 件物品。
+	ItemRetrieveError: 取回出现未知错误，钱币已退回！
+	SingleMoneyError: 钱币不足，无法买回该物品！
+	BagFullError: 背包已满，无法取回物品！
+}

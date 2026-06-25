@@ -1,0 +1,75 @@
+Configs: {
+	BulkSellConfig: {
+		DisplayName: Bulk Sell Config
+
+		Headers: {
+			Usage: Usage Guide & Hotkeys
+			Functional: Functional Settings
+			Layout: Layout Settings (Auto-saved)
+		}
+
+		UsageGuide: {
+			Label: Usage Guide
+			Tooltip:
+				'''
+				• Left Click Button: Sell non-favorited items.
+				• Right Click Button: Toggle History Panel.
+				• Top Text: Undo All.
+				• Item Entry Click: Buy back specific item.
+				• Note: Sell won't trigger if Alt or Shift is held.
+				'''
+		}
+
+		MaxHistory: {
+			Label: Max History Count
+			Tooltip: Maximum number of sell records to keep.
+		}
+
+		BlackList: {
+			Label: Forced Sell List
+			Tooltip: Items here will be sold even if they have no value.
+		}
+
+		ButtonLeft: {
+			Label: Button X Position
+			Tooltip: ""
+		}
+
+		ButtonTop: {
+			Label: Button Y Position
+			Tooltip: ""
+		}
+
+		ButtonWidth: {
+			Label: Button Width
+			Tooltip: ""
+		}
+
+		ButtonHeight: {
+			Label: Button Height
+			Tooltip: ""
+		}
+
+		ResetLayout: {
+			Tooltip: Click to reset layout to default
+			Label: Click to reset layout to default
+		}
+	}
+
+	ResetLayoutButton.Tooltip: ""
+}
+
+UI: {
+	ButtonHint: Sell(L) / History(R)
+	UndoAll: Click to Undo All
+	NoHistory: No History
+}
+
+Messages: {
+	InventoryFull: Inventory full, stopping!
+	MoneyInsufficient: Not enough money to buy back any items!
+	UndoSuccess: Successfully retrieved {0} items.
+	ItemRetrieveError: Error retrieving item, money refunded!
+	SingleMoneyError: Not enough money to buy back this item!
+	BagFullError: Inventory full, cannot retrieve item!
+}
