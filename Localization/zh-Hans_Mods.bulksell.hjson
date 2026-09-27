@@ -25,6 +25,11 @@ Configs: {
 			Tooltip: 最多保存多少条售卖记录。
 		}
 
+		SellPriceMultiplier: {
+			Label: 卖出价格倍率
+			Tooltip: 1.0 = 原版售价（物品价值的 1/5），最高 5.0 = 原版 5 倍，0 = 免费清空背包。
+		}
+
 		BlackList: {
 			Label: 强制售卖名单
 			Tooltip: 即使物品没有价值，也会被出售。
@@ -55,12 +60,16 @@ Configs: {
 			Label: 点击重置布局到默认值
 		}
 	}
-
-	// ResetLayoutButton.Tooltip: ""
 }
 
 UI: {
-	ButtonHint: 批量出售(左键) / 历史(右键)
+	ButtonHint: 批量出售
+	ButtonTooltip:
+		'''
+		左键：批量出售（会跳过收藏品和钱币）
+		右键：开关历史记录面板
+		按住 Alt / Shift 时不触发出售
+		'''
 	UndoAll: 点击此处全部取回
 	NoHistory: 暂无记录
 }

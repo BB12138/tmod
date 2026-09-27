@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.AssemblyInfo.cs
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.sourcelink.json
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\bin\Debug\net8.0\bulksell.deps.json
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\bin\Debug\net8.0\bulksell.dll
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\bin\Debug\net8.0\bulksell.pdb
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.dll
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\refint\bulksell.dll
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\bulksell.pdb
+C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\bulksell\obj\Debug\net8.0\ref\bulksell.dll

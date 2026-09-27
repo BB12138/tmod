@@ -25,6 +25,11 @@ Configs: {
 			Tooltip: Maximum number of sell records to keep.
 		}
 
+		SellPriceMultiplier: {
+			Label: Sell Price Multiplier
+			Tooltip: 1.0 = vanilla sell price (1/5 of item value). Up to 5.0 = 5x vanilla. 0 = clear items for free.
+		}
+
 		BlackList: {
 			Label: Forced Sell List
 			Tooltip: Items here will be sold even if they have no value.
@@ -55,12 +60,16 @@ Configs: {
 			Label: Click to reset layout to default
 		}
 	}
-
-	ResetLayoutButton.Tooltip: ""
 }
 
 UI: {
-	ButtonHint: Sell(L) / History(R)
+	ButtonHint: Bulk Sell
+	ButtonTooltip:
+		'''
+		LMB: Bulk sell (skips favorited items & coins)
+		RMB: Toggle history panel
+		Not triggered while Alt / Shift is held
+		'''
 	UndoAll: Click to Undo All
 	NoHistory: No History
 }

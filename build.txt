@@ -1,3 +1,5 @@
 displayName = Bulksell
 author = 没有酱
-version = 2.1
+version = 2.2
+side = Client
+homepage = https://github.com/BB12138/tmod

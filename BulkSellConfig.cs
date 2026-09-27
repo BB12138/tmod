@@ -26,6 +26,14 @@ namespace bulksell
         [Tooltip("$Mods.bulksell.Configs.BulkSellConfig.MaxHistory.Tooltip")]
         public int MaxHistory;
 
+        // 卖出价格倍率：1.0 = 原版售价（物品价值的 1/5），0 = 免费清空背包
+        [DefaultValue(1f)]
+        [Range(0f, 5f)]
+        [Increment(0.1f)]
+        [Label("$Mods.bulksell.Configs.BulkSellConfig.SellPriceMultiplier.Label")]
+        [Tooltip("$Mods.bulksell.Configs.BulkSellConfig.SellPriceMultiplier.Tooltip")]
+        public float SellPriceMultiplier = 1f;
+
         [Label("$Mods.bulksell.Configs.BulkSellConfig.BlackList.Label")]
         [Tooltip("$Mods.bulksell.Configs.BulkSellConfig.BlackList.Tooltip")]
         public List<ItemDefinition> BlackList = new List<ItemDefinition>();
@@ -33,26 +41,26 @@ namespace bulksell
         // --- 第三部分：界面布局 ---
         [Header("$Mods.bulksell.Configs.BulkSellConfig.Headers.Layout")]
         
-        [DefaultValue(700f)]
+        [DefaultValue(610f)]
         [Range(0f, 3000f)]
         [Increment(1f)]
         [Label("$Mods.bulksell.Configs.BulkSellConfig.ButtonLeft.Label")]
-        public float ButtonLeft = 700f;
+        public float ButtonLeft = 610f;
 
-        [DefaultValue(400f)]
+        [DefaultValue(15f)]
         [Range(0f, 2000f)]
         [Increment(1f)]
         [Label("$Mods.bulksell.Configs.BulkSellConfig.ButtonTop.Label")]
-        public float ButtonTop = 400f;
+        public float ButtonTop = 15f;
 
-        [DefaultValue(180f)]
-        [Range(40f, 1000f)] // 最小宽度40，防止滑条拉到最左变像素点
+        [DefaultValue(110f)]
+        [Range(80f, 200f)] // 下限 80（按钮只有 4 个汉字可缩小）、上限与拖拽上限一致
         [Increment(1f)]
         [Label("$Mods.bulksell.Configs.BulkSellConfig.ButtonWidth.Label")]
-        public float ButtonWidth = 180f;
+        public float ButtonWidth = 110f;
 
         [DefaultValue(40f)]
-        [Range(20f, 500f)]  // 最小高度20
+        [Range(28f, 100f)]  // 下限 28、上限与拖拽上限一致
         [Increment(1f)]
         [Label("$Mods.bulksell.Configs.BulkSellConfig.ButtonHeight.Label")]
         public float ButtonHeight = 40f;
@@ -70,9 +78,9 @@ namespace bulksell
             {
                 if (value)
                 {
-                    ButtonLeft = 700f;
-                    ButtonTop = 400f;
-                    ButtonWidth = 180f;
+                    ButtonLeft = 610f;
+                    ButtonTop = 15f;
+                    ButtonWidth = 110f;
                     ButtonHeight = 40f;
                 }
                 _resetLayout = false;
